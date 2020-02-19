@@ -22,11 +22,15 @@ nav a {
     padding-bottom: 15px;
     display: block;
     text-decoration: none;
-    color: #6a8caf;
+    color:#222222;
     transition: .3s;
 }
 nav .menu a:hover {
     background: #a7e9af;
+}
+nav .logo{
+    font-size: 20px;
+    
 }
 /* 手機不會有hover的反應，但可視情況保留 */
 @media (min-width:600px){
@@ -66,27 +70,44 @@ p {
 /* header */
 
 header {
-    background-image: url('https://picsum.photos/id/147/1200/600');
+    background-image: url('https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/s960x960/17991679_785061661659923_1418046379047896465_o.jpg?_nc_cat=102&_nc_ohc=blEOAlkeLooAX-8RIeS&_nc_ht=scontent.ftpe8-4.fna&_nc_tp=7&oh=706085c208b210627c05d4c5977f2491&oe=5F00FAFE');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left top;
+    /* height: 150px; */
     padding-top: 250px;
     padding-bottom: 250px;
 }
 header h1 {
-    font-size: 72px;
-    text-shadow: 5px 5px 5px black;
+    padding-top: 20px;
+    font-size: 50px;
+    color:#f8f6f6;
+    text-shadow: 3px 3px 3px rgb(15, 14, 14);
 }
 header p {
-    /* margin-top: 30px; */
-    /* margin-bottom: 30px; */
-    /* line-height: 1.5em; */
-    text-shadow: 1px 1px 3px black;
+    font-size:20px;
+    color:#222222;
+    
+    /* text-shadow: 3px 3px 3px rgb(178, 230, 165); */
+
 }
 header .row {
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
     color: #eee;
+}
+@media (min-width:600px){
+    header {
+        background-position:top;
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }
+    header h1 {
+        color:#222222;
+        text-shadow: 3px 3px 3px white;
+        
+    }
+
 }
 /* about */
 #about {
