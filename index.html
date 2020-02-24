@@ -6,9 +6,26 @@
     <title>WEI</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
+    <!-- <script>
+        $(function(){
+            var offset = 70;
+            $('.navbar li a').click(function(event){
+                event.preventDefault();
+                    $($(this).attr('href'))[0].scrollIntoView();
+                    scrollBy(0, -offset);
+            });
+            $('.navbar a').on('click', function(){
+                $('.navbar-toggle').click();
+                });
+             
+        });
+    </script> -->
     <style>
         body{ 
             padding: 70px;
@@ -16,94 +33,95 @@
             font-family: "Microsoft Jhenghei";
         }
         .navbar-default {
-        background-color: #eb9c8d;
-        border-color: #fed39f;
+        background-color: #d1c9c9;
+        border-color: #faf5e4;
         }
         .navbar-default .navbar-brand {
-            color: #fcf8e8;
+        color: #333366;
         }
         .navbar-default .navbar-brand:hover,
         .navbar-default .navbar-brand:focus {
-            color: #84142d;
+        color: #9d2503;
         }
         .navbar-default .navbar-text {
-            color: #fcf8e8;
+        color: #333366;
         }
         .navbar-default .navbar-nav > li > a {
-            color: #fcf8e8;
+        color: #333366;
         }
         .navbar-default .navbar-nav > li > a:hover,
         .navbar-default .navbar-nav > li > a:focus {
-            color: #84142d;
+        color: #9d2503;
         }
         .navbar-default .navbar-nav > li > .dropdown-menu {
-            background-color: #eb9c8d;
+        background-color: #d1c9c9;
         }
         .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
-            color: #fcf8e8;
+        color: #333366;
         }
         .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
         .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
-            color: #84142d;
-            background-color: #fed39f;
+        color: #9d2503;
+        background-color: #faf5e4;
         }
         .navbar-default .navbar-nav > li > .dropdown-menu > li.divider {
-            background-color: #fed39f;
+        background-color: #faf5e4;
         }
         .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
         .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
         .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-            color: #84142d;
-            background-color: #fed39f;
+        color: #9d2503;
+        background-color: #faf5e4;
         }
         .navbar-default .navbar-nav > .active > a,
         .navbar-default .navbar-nav > .active > a:hover,
         .navbar-default .navbar-nav > .active > a:focus {
-            color: #84142d;
-            background-color: #fed39f;
+        color: #9d2503;
+        background-color: #faf5e4;
         }
         .navbar-default .navbar-nav > .open > a,
         .navbar-default .navbar-nav > .open > a:hover,
         .navbar-default .navbar-nav > .open > a:focus {
-            color: #84142d;
-            background-color: #fed39f;
+        color: #9d2503;
+        background-color: #faf5e4;
         }
         .navbar-default .navbar-toggle {
-            border-color: #fed39f;
+        border-color: #faf5e4;
         }
         .navbar-default .navbar-toggle:hover,
         .navbar-default .navbar-toggle:focus {
-            background-color: #fed39f;
+        background-color: #faf5e4;
         }
         .navbar-default .navbar-toggle .icon-bar {
-            background-color: #fcf8e8;
+        background-color: #333366;
         }
         .navbar-default .navbar-collapse,
         .navbar-default .navbar-form {
-            border-color: #fcf8e8;
+        border-color: #333366;
         }
         .navbar-default .navbar-link {
-            color: #fcf8e8;
+        color: #333366;
         }
         .navbar-default .navbar-link:hover {
-            color: #84142d;
+        color: #9d2503;
         }
-        
+
         @media (max-width: 767px) {
-            .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-            color: #fcf8e8;
-            }
-            .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-            .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-            color: #84142d;
-            }
-            .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-            .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-            .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-            color: #84142d;
-            background-color: #fed39f;
-            }
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+            color: #333366;
         }
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #9d2503;
+        }
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+            color: #9d2503;
+            background-color: #faf5e4;
+        }
+        }
+
         body,html{
             margin:0;
             padding:0;
@@ -111,56 +129,123 @@
         }
         img{
             width: 100%;
-            /* border-radius: 50%; */
         }
-        /* .avatar{
-            vertical-align:middle;
-            width: 300px;
-            height: 300px;
-            padding-top: 100px;
-
-            border-radius: 50%;
-        } */ 
-        .bg-image{
-            background-image: url("HOME.jpg");
-            filter:blur(3px);
-            height:100%;
-            padding: 0;
+        
+        .bg{
+            height:750px;
+            padding:0;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
+        .bg-image{
+            background-image: url("HOME.jpg");
+            filter:blur(2px);
+        }
+        @media (min-width: 767px){
+            .bg-image{
+                height:100%;
+                /* padding-bottom: 10px; */
+            }
+
+        }
         .bg-text{
+            position: absolute;
             background-color: rgb(0,0,0); /* Fallback color */
             background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
             color: white;
             font-weight: bold;
-            border: 3px solid #f1f1f1;
-            position: absolute;
-            top: 75%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            width: 80%;
             padding: 30px;
+            z-index: 2;
             text-align: center;
         }
+        .bg-head{
+            border: 3px solid #f1f1f1;
+            top: 75%;
+            left: 51%;
+            transform: translate(-50%, -50%);
+            
+            width: 80%;
+        }
+        #home{
+            /* padding: 100px 0;照片版本 */
+            padding:170px 0 90px 0;  
+            background-image: url("https://images.unsplash.com/photo-1528372531841-f1228963b0af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");          
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity:0.9;
+        }
+        /* #home .container-fluid{
+            padding:0px;
+        } */
+        
+        .pic{
+            /* padding:50px 15px;照片版本 */  
+        }
+        .scholar{           
+            margin:100px 0;
+            border: 3px solid #6d3862;
+        }
+        /* .scholar h2,h3{
+            
+            font-weight: bold;
+        }
+        .scholar h2{
+            padding: 20px 0 25px 0;
+        }
+        .scholar h3{
+            padding:8px 0 0 0;
+        } */
+        .scholar h2{
+            padding:15px;
+            font-weight: bold;
+        }
+        .scholar h3{
+            padding:15px;
+            font-weight: bold;
+        }
+        
+        .intro{
+            padding-top: 30px;
+            /* font-size:40px; */
+            font-family: 'Libre Baskerville';
+        }
+        .intro h4{
+            padding-top: 25px;
+            /* text-align: left; */
+        }
+        .icon{
+            /* display: inline-block; */
+            padding:29px 0 0 0px;
+            /* text-align: left; */
+        }
+
         #menu1{
+            padding:80px 0;
             font-size:20px;
         }
         .text{
-            padding:55px 15px 20px 15px;
-            /* padding-bottom: 20px; */
+            /* margin-top:60px; */
+            margin-bottom: 0px;
+            border-bottom:2px solid rgb(153, 150, 150);
+            padding-bottom: 20px;
+            /* font-size: 28px; */
             font-weight: bold;
             text-align: center;
         }
-        .text, .text2{
-            padding:25px 15px 15px 15px;
-            /* padding-bottom: 15px; */
+        .text2{
+            padding-top:15px;
+            margin-top:40px;
+            margin-bottom: 0px;
+            
+            font-weight: bold;
+            text-align: center;
         }
-        .col-12{
-            padding:0 20px;
+        .t-center{
+            text-align: center;
         }
+        
      </style>
 </head>
 <body  data-target="#navbar-spy" data-spy="scroll" >
@@ -178,49 +263,106 @@
              </div>
              <div class="collapse navbar-collapse" id="myNavbar">
                  <ul class="nav navbar-nav  navbar-right">
-                     <!-- <li><a href="#home">關於我</a></li> -->
+                     <li><a href="#home">關於</a></li>
                      <li><a href="#menu1">自傳</a></li>
                      <li><a href="#menu2">生涯規劃</a></li>
                  </ul>
              </div>
          </div>
     </nav> 
-    <div class="bg-image"></div>
-    <div class="bg-text row">
-        <div class="col-12">
-            <h1 class="">Welcome to my website</h1>
+    <div class="bg bg-image"></div>
+    <div class="bg-text bg-head row">
+        <div class="col-xs-12">
+            <h1>Welcome to my website</h1><br>
             <p>NTHU | EE</p>
         </div>
-        
     </div>
+    <div id="home">
+        <div class="container">
+            <div class="row">
+                <h1 class="col-xs-3 col-sm-4"></h1>
+                <h1 class="col-xs-6 text col-sm-4">關於</h1>
+                <h1 class="col-xs-3 col-sm-4"></h1>
+                <div class="col-xs-12">
+                    <div class="col-sm-3 col-xs-1"></div>
+                    <div class="col-sm-6 col-xs-10">
+                        <div class="scholar t-center">
+                            <h2>申請</h2>
+                            <h3>朱順一獎學金</h3>
+                            <h3>電資院優秀學生獎學金</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-1"></div>
+                </div>
+            </div>
+                
+                    
+                <!-- <h1 class="col-xs-3 col-sm-4"></h1>
+                <h1 class="col-xs-6 text col-sm-4">關於</h1>
+                <h1 class="col-xs-3 col-sm-4"></h1> -->
+                <!-- <div class="col-xs-12"> -->
+                    <!-- <div class="col-xs-12 col-sm-6">
+                        <img src="right.jpg" alt="VIVIAN" class="pic"> 照片版本
+                    </div> -->
+                    <!-- <div class="col-xs-12 col-sm-6">
+                        <div class="intro col-xs-12 row">
+                            <div class="col-xs-12">
+                                <h2>Vivian LEE</h2>
+                            </div>
+                            <div class="col-xs-1 col-sm-2 ">
+                                <i class="fas fa-university icon" style="font-size:29.5px;"></i>
+                            </div>
+                            <div class="col-xs-11 col-sm-10">
+                                <h4>NTHU EE 3rd</h4>
+                            </div>
+                            <div class="col-xs-1 col-sm-2 ">
+                                <i class="fas fa-envelope icon" style="font-size:28px;"></i>
+                            </div>
+                            <div class="col-xs-11 col-sm-10">
+                                <h4>weiaquarius17@gmail.com</h4>
+                            </div>
+                        </div>                        
+                    </div> -->
+                    
+                <!-- </div> -->
+            <!-- </div> -->
+        </div>
+    </div>
+    <div id="menu1">
     <div class="container">
         <div class="row">
-            <div class="col-12" id="menu1">
-                <h1 class="text">自傳</h1>
-                <!-- <h2 class="t-center">(個人經歷活動方面)</h2> -->
-                <p>
-                    <h4 class="text text2">積極參與活動、爭取校內、系上資源，不停突破自己的能耐。</h4><br>
-                    在大二時，擔任熱舞社活動長在社團大放異彩、也同時擔任系學會公關股員，另外也因為對職場懷抱好奇與憧憬，主動申請上清大的「企業領航人才培育計畫」，更是在同年暑假申請上「電機系海外交流獎學金」，在加拿大哥倫比亞大學學習大數據分析，也接觸各國人才與文化……在各領域的學習所培育的才能，也於大三時貢獻於電機系上，擔任了電機系系學會長。一直以來便是不斷地在精進自我，積極爭取資源學習。
-                </p>
-                <!-- <h2 class="text">(團隊領導力、修課學習方面)</h2> -->
-                <p>
-                    <h4 class="text text2">具有原則性、自主學習能力。</h4><br>
-                    在帶領團隊時，我也會在每次開會前致定目標方針與進度規劃，讓夥伴在開會時能迅速理解問題、並有效率地討論解決方案。
-                    而面對團隊突發狀況我會先行處理，並等到活動結束後再檢討——記得去年辦理耶舞時，因為負責行政組的系忘記申請稅務局稅收核可，也因為時間急迫、無人力處理情況下，我便第一時間向課外組詢問，並在當日下午前往新竹市稅務局處理，迅速地在兩天內解決，儘管因當時與各系之間職權發生問題，我仍將意見想法保留至活動結束後才向工人們說明與檢討。我認為在團隊中須將團隊與個人區分，將活動辦好是團體的目標，團隊中合作氛圍將影響各組間默契及活動順利與否，面對緊急狀況或是失誤，應該理性地解決並避免再次發生，這次的經驗也讓我對行政程序有更深地認識，並將經驗列入檢討當中，提供下一屆系學會更多的資料參考。
-                    另外我在修課學習上也很願意多元嘗試，喜歡創新創業相關知識，也多次修外系的課去加強自己多工能力的培養， 課餘期間也會自學網頁設計、學習繪圖軟體(如：photoshop、illustrator等)，不斷突破學習框架，探索各領域知識。
-                </p>
-                <!-- <h2 class="text">(專題研究方面)</h2> -->
-                <p>
-                    <h4 class="text text2">願意不斷嘗試、全力以赴達成目標。</h4><br>
-                    在專題研究上，需要自行去尋找問題，並進一步想辦法解決，我剛開始的目標是需要找到適合的容器去做THz 蛋白質檢測的實驗，一路上不斷地查閱研究paper、與學長姐討論問題，也自行去找廠商製作容器規格，並突破限制，儘管過程中屢屢碰壁，我仍努力地達到目標，最後成功地打破價格、可行性、材質等種種限制，找到了十分適用的容器，也進一步完成了實驗的設計架設。
-                </p>
-
+            <h1 class="col-xs-3 col-sm-4"></h1>
+            <h1 class="col-xs-6 text col-sm-4">自傳</h1>
+            <h1 class="col-xs-3 col-sm-4"></h1>
+            <div class="col-xs-12">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 col-xs-12">
+                    <!-- <h2 class="t-center">(個人經歷活動方面)</h2> -->
+                    <p>
+                        <h4 class="text2">積極參與活動、爭取校內、系上資源，不停突破自己的能耐。</h4><br>
+                        在大二時，擔任熱舞社活動長在社團大放異彩、也同時擔任系學會公關股員，另外也因為對職場懷抱好奇與憧憬，主動申請上清大的「企業領航人才培育計畫」，更是在同年暑假申請上「電機系海外交流獎學金」，在加拿大哥倫比亞大學學習大數據分析，也接觸各國人才與文化……在各領域的學習所培育的才能，也於大三時貢獻於電機系上，擔任了電機系系學會長。一直以來便是不斷地在精進自我，積極爭取資源學習。
+                    </p>
+                    <!-- <h2 class="text">(團隊領導力、修課學習方面)</h2> -->
+                    <p>
+                        <h4 class="text2">具有原則性、自主學習能力。</h4><br>
+                        在帶領團隊時，我也會在每次開會前致定目標方針與進度規劃，讓夥伴在開會時能迅速理解問題、並有效率地討論解決方案。
+                        而面對團隊突發狀況我會先行處理，並等到活動結束後再檢討——記得去年辦理耶舞時，因為負責行政組的系忘記申請稅務局稅收核可，也因為時間急迫、無人力處理情況下，我便第一時間向課外組詢問，並在當日下午前往新竹市稅務局處理，迅速地在兩天內解決，儘管因當時與各系之間職權發生問題，我仍將意見想法保留至活動結束後才向工人們說明與檢討。我認為在團隊中須將團隊與個人區分，將活動辦好是團體的目標，團隊中合作氛圍將影響各組間默契及活動順利與否，面對緊急狀況或是失誤，應該理性地解決並避免再次發生，這次的經驗也讓我對行政程序有更深地認識，並將經驗列入檢討當中，提供下一屆系學會更多的資料參考。
+                        另外我在修課學習上也很願意多元嘗試，喜歡創新創業相關知識，也多次修外系的課去加強自己多工能力的培養， 課餘期間也會自學網頁設計、學習繪圖軟體(如：photoshop、illustrator等)，不斷突破學習框架，探索各領域知識。
+                    </p>
+                    <!-- <h2 class="text">(專題研究方面)</h2> -->
+                    <p>
+                        <h4 class="text2">願意不斷嘗試、全力以赴達成目標。</h4><br>
+                        在專題研究上，需要自行去尋找問題，並進一步想辦法解決，我剛開始的目標是需要找到適合的容器去做THz 蛋白質檢測的實驗，一路上不斷地查閱研究paper、與學長姐討論問題，也自行去找廠商製作容器規格，並突破限制，儘管過程中屢屢碰壁，我仍努力地達到目標，最後成功地打破價格、可行性、材質等種種限制，找到了十分適用的容器，也進一步完成了實驗的設計架設。
+                    </p>
+                </div>
+                <div class="col-sm-1"></div>
             </div>
+                
         </div>
+    </div>
     </div>
 </body>
 </html>
-
 
 
 
