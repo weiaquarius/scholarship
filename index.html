@@ -140,14 +140,19 @@
         }
         .bg-image{
             background-image: url(img/HOME.JPG);
-            filter:blur(2px);
+            filter:blur(1px);
         }
         @media (min-width: 767px){
             .bg-image{
                 height:100%;
+                filter:blur(2px);
                 /* padding-bottom: 10px; */
             }
-
+        }
+        @media (min-width:992px){
+            .bg-image{
+                filter:blur(3px);
+            }
         }
         .bg-text{
             position: absolute;
