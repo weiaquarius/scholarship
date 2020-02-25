@@ -121,7 +121,7 @@ img{
     background-size: cover;
 }
 .bg-image{
-    background-image: url(img/HOME.JPG);
+    background-image: url(../img/HOME.JPG);
     /* filter:blur(1px); */
 }
 @media (min-width: 767px){
@@ -144,6 +144,9 @@ img{
     padding: 20px;
     z-index: 2;
     text-align: center;
+}
+.bg-text h1{
+    font-size:30px;
 }
 @media (min-width:767px){
     .bg-text{
@@ -245,7 +248,6 @@ img{
     padding-top:15px;
     margin-top:40px;
     margin-bottom: 0px;
-    
     font-weight: bold;
     text-align: center;
 }
@@ -303,28 +305,28 @@ img{
         background-position: center;
     }
     .plane:nth-last-of-type(1){
-        background-image: url(img/xmas.JPG);
+        background-image: url(../img/xmas.JPG);
         transform:translateZ(250px);
         /* 也就是寬度一半250，再乘以根號3:1.732=>150*1.732=259.8px */
     }
     .plane:nth-last-of-type(2){
-        background-image: url(img/deepcove.JPG);
+        background-image: url(../img/deepcove.JPG);
         transform:rotateY(60deg)translateZ(250px);
     }
     .plane:nth-last-of-type(3){
-        background-image: url(img/photograph.JPG);
+        background-image: url(../img/photograph.JPG);
         transform:rotateY(120deg)translateZ(250px);
     }
     .plane:nth-last-of-type(4){
-        background-image: url(img/mountain.JPG);
+        background-image: url(../img/mountain.JPG);
         transform:rotateY(180deg)scaleY(-1)scalex(-1)translateZ(250px);
     }
     .plane:nth-last-of-type(5){
-        background-image: url(img/shore.JPG);
+        background-image: url(../img/shore.JPG);
         transform:rotateY(240deg)translateZ(250px);
     }
     .plane:nth-last-of-type(6){
-        background-image: url(AMS.JPG);
+        background-image: url(../img/ME.png);
         transform:rotateY(300deg)translateZ(250px);
     }
 }
