@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEI</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="custom.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <!-- <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- <script>
         $(function(){
@@ -27,229 +26,7 @@
         });
     </script> -->
     <style>
-        body{ 
-            padding: 70px;
-            position:relative;
-            font-family: "Microsoft Jhenghei";
-        }
-        .navbar-default {
-        background-color: #d1c9c9;
-        border-color: #faf5e4;
-        }
-        .navbar-default .navbar-brand {
-        color: #333366;
-        }
-        .navbar-default .navbar-brand:hover,
-        .navbar-default .navbar-brand:focus {
-        color: #9d2503;
-        }
-        .navbar-default .navbar-text {
-        color: #333366;
-        }
-        .navbar-default .navbar-nav > li > a {
-        color: #333366;
-        }
-        .navbar-default .navbar-nav > li > a:hover,
-        .navbar-default .navbar-nav > li > a:focus {
-        color: #9d2503;
-        }
-        .navbar-default .navbar-nav > li > .dropdown-menu {
-        background-color: #d1c9c9;
-        }
-        .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
-        color: #333366;
-        }
-        .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
-        .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
-        color: #9d2503;
-        background-color: #faf5e4;
-        }
-        .navbar-default .navbar-nav > li > .dropdown-menu > li.divider {
-        background-color: #faf5e4;
-        }
-        .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-        .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-        .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-        color: #9d2503;
-        background-color: #faf5e4;
-        }
-        .navbar-default .navbar-nav > .active > a,
-        .navbar-default .navbar-nav > .active > a:hover,
-        .navbar-default .navbar-nav > .active > a:focus {
-        color: #9d2503;
-        background-color: #faf5e4;
-        }
-        .navbar-default .navbar-nav > .open > a,
-        .navbar-default .navbar-nav > .open > a:hover,
-        .navbar-default .navbar-nav > .open > a:focus {
-        color: #9d2503;
-        background-color: #faf5e4;
-        }
-        .navbar-default .navbar-toggle {
-        border-color: #faf5e4;
-        }
-        .navbar-default .navbar-toggle:hover,
-        .navbar-default .navbar-toggle:focus {
-        background-color: #faf5e4;
-        }
-        .navbar-default .navbar-toggle .icon-bar {
-        background-color: #333366;
-        }
-        .navbar-default .navbar-collapse,
-        .navbar-default .navbar-form {
-        border-color: #333366;
-        }
-        .navbar-default .navbar-link {
-        color: #333366;
-        }
-        .navbar-default .navbar-link:hover {
-        color: #9d2503;
-        }
-
-        @media (max-width: 767px) {
-        .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-            color: #333366;
-        }
-        .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-        .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-            color: #9d2503;
-        }
-        .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-        .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-        .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-            color: #9d2503;
-            background-color: #faf5e4;
-        }
-        }
-
-        body,html{
-            margin:0;
-            padding:0;
-            height:100%;
-        }
-        img{
-            width: 100%;
-        }
         
-        .bg{
-            height:750px;
-            padding:0;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .bg-image{
-            background-image: url(img/HOME.JPG);
-            /* filter:blur(1px); */
-        }
-        @media (min-width: 767px){
-            .bg-image{
-                height:100%;
-                filter:blur(2px);
-                /* padding-bottom: 10px; */
-            }
-        }
-        @media (min-width:992px){
-            .bg-image{
-                filter:blur(3px);
-            }
-        }
-        .bg-text{
-            position: absolute;
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-            color: white;
-            font-weight: bold;
-            padding: 30px;
-            z-index: 2;
-            text-align: center;
-        }
-        .bg-head{
-            border: 3px solid #f1f1f1;
-            top: 75%;
-            left: 51%;
-            transform: translate(-50%, -50%);
-            
-            width: 80%;
-        }
-        #home{
-            /* padding: 100px 0;照片版本 */
-            padding:170px 0 90px 0;  
-            background-image: url("https://images.unsplash.com/photo-1528372531841-f1228963b0af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");          
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            opacity:0.9;
-        }
-        /* #home .container-fluid{
-            padding:0px;
-        } */
-        
-        /* .pic{
-            padding:50px 15px;照片版本  
-        } */
-        .scholar{           
-            margin:100px 0;
-            border: 3px solid #6d3862;
-        }
-        /* .scholar h2,h3{
-            
-            font-weight: bold;
-        }
-        .scholar h2{
-            padding: 20px 0 25px 0;
-        }
-        .scholar h3{
-            padding:8px 0 0 0;
-        } */
-        .scholar h2{
-            padding:15px;
-            font-weight: bold;
-        }
-        .scholar h3{
-            padding:15px;
-            font-weight: bold;
-        }
-        
-        .intro{
-            padding-top: 30px;
-            /* font-size:40px; */
-            font-family: 'Libre Baskerville';
-        }
-        .intro h4{
-            padding-top: 25px;
-            /* text-align: left; */
-        }
-        .icon{
-            /* display: inline-block; */
-            padding:29px 0 0 0px;
-            /* text-align: left; */
-        }
-
-        #menu1{
-            padding:80px 0;
-            font-size:20px;
-        }
-        .text{
-            /* margin-top:60px; */
-            margin-bottom: 0px;
-            border-bottom:2px solid rgb(153, 150, 150);
-            padding-bottom: 20px;
-            /* font-size: 28px; */
-            font-weight: bold;
-            text-align: center;
-        }
-        .text2{
-            padding-top:15px;
-            margin-top:40px;
-            margin-bottom: 0px;
-            
-            font-weight: bold;
-            text-align: center;
-        }
-        .t-center{
-            text-align: center;
-        }
         
      </style>
 </head>
@@ -271,6 +48,7 @@
                      <li><a href="#home">關於</a></li>
                      <li><a href="#menu1">自傳</a></li>
                      <li><a href="#menu2">生涯規劃</a></li>
+                     <li><a href="#photo">相片集</a></li>
                  </ul>
              </div>
          </div>
@@ -278,7 +56,7 @@
     <div class="bg bg-image"></div>
     <div class="bg-text bg-head row">
         <div class="col-xs-12">
-            <h1>Welcome to my website</h1><br>
+            <h1>Wei-KO LI</h1><br>
             <p>NTHU | EE</p>
         </div>
     </div>
@@ -334,43 +112,259 @@
         </div>
     </div>
     <div id="menu1">
-    <div class="container">
-        <div class="row">
+        <div class="container">
+            <div class="row">
+                <h1 class="col-xs-3 col-sm-4"></h1>
+                <h1 class="col-xs-6 text col-sm-4">自傳</h1>
+                <h1 class="col-xs-3 col-sm-4"></h1>
+                <div class="col-xs-12">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10 col-xs-12">
+                        <!-- <h2 class="t-center">(個人經歷活動方面)</h2> -->
+                        <p>
+                            <h4 class="text2">積極參與活動、爭取校內、系上資源，不停突破自己的能耐。</h4><br>
+                            在大二時，擔任熱舞社活動長在社團大放異彩、也同時擔任系學會公關股員，另外也因為對職場懷抱好奇與憧憬，主動申請上清大的「企業領航人才培育計畫」，更是在同年暑假申請上「電機系海外交流獎學金」，在加拿大哥倫比亞大學學習大數據分析，也接觸各國人才與文化……在各領域的學習所培育的才能，也於大三時貢獻於電機系上，擔任了電機系系學會長。一直以來便是不斷地在精進自我，積極爭取資源學習。
+                        </p>
+                        <!-- <h2 class="text">(團隊領導力、修課學習方面)</h2> -->
+                        <p>
+                            <h4 class="text2">具有原則性、自主學習能力。</h4><br>
+                            在帶領團隊時，我也會在每次開會前致定目標方針與進度規劃，讓夥伴在開會時能迅速理解問題、並有效率地討論解決方案。
+                            而面對團隊突發狀況我會先行處理，並等到活動結束後再檢討——記得去年辦理耶舞時，因為負責行政組的系忘記申請稅務局稅收核可，也因為時間急迫、無人力處理情況下，我便第一時間向課外組詢問，並在當日下午前往新竹市稅務局處理，迅速地在兩天內解決，儘管因當時與各系之間職權發生問題，我仍將意見想法保留至活動結束後才向工人們說明與檢討。我認為在團隊中須將團隊與個人區分，將活動辦好是團體的目標，團隊中合作氛圍將影響各組間默契及活動順利與否，面對緊急狀況或是失誤，應該理性地解決並避免再次發生，這次的經驗也讓我對行政程序有更深地認識，並將經驗列入檢討當中，提供下一屆系學會更多的資料參考。
+                            另外我在修課學習上也很願意多元嘗試，喜歡創新創業相關知識，也多次修外系的課去加強自己多工能力的培養， 課餘期間也會自學網頁設計、學習繪圖軟體(如：photoshop、illustrator等)，不斷突破學習框架，探索各領域知識。
+                        </p>
+                        <!-- <h2 class="text">(專題研究方面)</h2> -->
+                        <p>
+                            <h4 class="text2">願意不斷嘗試、全力以赴達成目標。</h4><br>
+                            在專題研究上，需要自行去尋找問題，並進一步想辦法解決，我剛開始的目標是需要找到適合的容器去做THz 蛋白質檢測的實驗，一路上不斷地查閱研究paper、與學長姐討論問題，也自行去找廠商製作容器規格，並突破限制，儘管過程中屢屢碰壁，我仍努力地達到目標，最後成功地打破價格、可行性、材質等種種限制，找到了十分適用的容器，也進一步完成了實驗的設計架設。
+                        </p>
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>      
+            </div>
+        </div>
+    </div>
+    <div id="menu2">
+        <div class="container">
             <h1 class="col-xs-3 col-sm-4"></h1>
-            <h1 class="col-xs-6 text col-sm-4">自傳</h1>
+            <h1 class="col-xs-6 text col-sm-4">生涯規劃</h1>
             <h1 class="col-xs-3 col-sm-4"></h1>
             <div class="col-xs-12">
                 <div class="col-sm-1"></div>
-                <div class="col-sm-10 col-xs-12">
-                    <!-- <h2 class="t-center">(個人經歷活動方面)</h2> -->
-                    <p>
-                        <h4 class="text2">積極參與活動、爭取校內、系上資源，不停突破自己的能耐。</h4><br>
-                        在大二時，擔任熱舞社活動長在社團大放異彩、也同時擔任系學會公關股員，另外也因為對職場懷抱好奇與憧憬，主動申請上清大的「企業領航人才培育計畫」，更是在同年暑假申請上「電機系海外交流獎學金」，在加拿大哥倫比亞大學學習大數據分析，也接觸各國人才與文化……在各領域的學習所培育的才能，也於大三時貢獻於電機系上，擔任了電機系系學會長。一直以來便是不斷地在精進自我，積極爭取資源學習。
-                    </p>
-                    <!-- <h2 class="text">(團隊領導力、修課學習方面)</h2> -->
-                    <p>
-                        <h4 class="text2">具有原則性、自主學習能力。</h4><br>
-                        在帶領團隊時，我也會在每次開會前致定目標方針與進度規劃，讓夥伴在開會時能迅速理解問題、並有效率地討論解決方案。
-                        而面對團隊突發狀況我會先行處理，並等到活動結束後再檢討——記得去年辦理耶舞時，因為負責行政組的系忘記申請稅務局稅收核可，也因為時間急迫、無人力處理情況下，我便第一時間向課外組詢問，並在當日下午前往新竹市稅務局處理，迅速地在兩天內解決，儘管因當時與各系之間職權發生問題，我仍將意見想法保留至活動結束後才向工人們說明與檢討。我認為在團隊中須將團隊與個人區分，將活動辦好是團體的目標，團隊中合作氛圍將影響各組間默契及活動順利與否，面對緊急狀況或是失誤，應該理性地解決並避免再次發生，這次的經驗也讓我對行政程序有更深地認識，並將經驗列入檢討當中，提供下一屆系學會更多的資料參考。
-                        另外我在修課學習上也很願意多元嘗試，喜歡創新創業相關知識，也多次修外系的課去加強自己多工能力的培養， 課餘期間也會自學網頁設計、學習繪圖軟體(如：photoshop、illustrator等)，不斷突破學習框架，探索各領域知識。
-                    </p>
-                    <!-- <h2 class="text">(專題研究方面)</h2> -->
-                    <p>
-                        <h4 class="text2">願意不斷嘗試、全力以赴達成目標。</h4><br>
-                        在專題研究上，需要自行去尋找問題，並進一步想辦法解決，我剛開始的目標是需要找到適合的容器去做THz 蛋白質檢測的實驗，一路上不斷地查閱研究paper、與學長姐討論問題，也自行去找廠商製作容器規格，並突破限制，儘管過程中屢屢碰壁，我仍努力地達到目標，最後成功地打破價格、可行性、材質等種種限制，找到了十分適用的容器，也進一步完成了實驗的設計架設。
-                    </p>
+                <div class="col-sm-10 layout">
+                    <div class="col-sm-1 col-md-2 col-xs-12">
+                        <div class="circle">
+                            <h4>前言<br>介紹</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-11 col-md-10 col-xs-12">
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在大二下時因修習<b class="t-bold">蔡仁松教授</b>的<b class="t-bold">「創新創意創業」</b>課程，讓我認識到了<b class="t-bold">「UX，User Experience使用者經驗研究」</b>相關的知識，因而對此領域產生好奇，至今已閱讀過無數Medium平台上的文章，也因為學習意識強烈，在大二下學期末時，參加了<b class="t-bold">交大「NCTU+」</b>學生組織，裡面有「前端組」、「後端組」、「UX組」、「行銷組」，並為UX組的成員。<br><br></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NCTU+網站致力於學生平台的規劃與設計，如：選課資訊、考古修課心得、活動發布平台，而UX組則透過訪談、使用者故事、prototype原型設計……等方式，了解使用者—交大學生的需求與問題所在，進而建造出「適合交大同學使用的校園平台」。其中多與交大資工系同學合作，從中也互相交流學習，而目前在作「活動吧」平台的redesign。<br><br></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;除了參與NCTU+ side project的製作之外，我也多方經由<b class="t-bold">系外課程、課外活動</b>方式精進自我的能力，如：大三上學期修工工所的「人機互動」課程，過程中與外籍生、社會人士交流互動；參加HPX台北讀書會，經由與就業人士一同導讀UX相關書籍，也透過他們的經驗分享讓我在學業與產業界間作連結……等等，盡可能地尋找資源學習，是我一直以來所堅持與努力的方向。<br><br></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目前對於未來規畫方向會以跨領域方面著手，其中因為修課資源、同學人脈，讓我對使用者研究有更深一步地追求，也因為在<b class="t-bold">系上種種課程訓練</b>，讓我在<b class="t-bold">培養新專長</b>時，可以<b class="t-bold">自主學習</b>，從查閱資料、篩選有用的訊息，到多方主動求助與爭取機會，都是這三年來學校所培育我而有的成果。<br><br></p>
+                        
+                       
+                       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以下便將以時間軸方式呈現未來生涯規劃，並在各階段以不同面向切入說明。</p>
+                    </div>
+                    <div class="col-sm-1 col-md-2 col-xs-12">
+                        <div class="circle">
+                            <h4>近程<br>(大三下)</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-11 col-md-10 col-xs-12">
+                        
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;寒假期間在線上<b class="t-bold">自學網路設計</b>、<b class="t-bold">準備托福</b>英文檢定考試，同時也與一間公司完成面試，並持續在調整個人履歷與作品集方向邁進。
+                            而關於大三下學期有以下進程方面的規劃：<br><br>
+                        </p>
+                        <h4 class="text3">(1)學業方面</h4><br>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大三下學期課程規劃會以<b class="t-bold">「網路架構」</b>、<b class="t-bold">「產品設計」</b>兩個方面為主。<br><br>
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b class="t-bold">「網路架構」</b>部分，因為UX領域除了研究設計，也必須能與<b class="t-bold">工程端溝通</b>，這時候工程知識便非常重要!所以我認為除了修習研究方面的知識之外，也應該培育軟體理解、撰寫的能力，所以我點選了電資院選修中的<b class="t-bold">「計算機網路概論」</b>、<b class="t-bold">「軟體設計與實驗」</b>，以加強對於網路方面的結構認識，再經由實驗課程實際操作，以前端架構培訓為目標，希望成為有厚底子工程端背景的UX研究員!<br><br>
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b class="t-bold">「產品設計」</b>部分，因為想要加強產品流程概念與實作經驗，所以點選了工工系的<b class="t-bold">「產品設計與開發」</b>，課程會確立個人角色在小組的定位進行產品開發–舉凡：工程師、PM、工業設計師、市場分析家–，強調注重在實作、實際產業界運作方式進行，是我十分期待的一門課程。<br><br>
+                        </p>  
+                        <h4 class="text3">(2)暑期實習申請(準備)</h4><br>            
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;預計在大三暑假參與公司實習，而目前已經完成履歷表撰寫設計。也在寒假時與一間新創公司面試，目前為等待期間，之後會進一步整理<b class="t-bold">個人作品集(打造個人網頁方式呈現)</b>，並整理有釋出相關UX設計研究的實習公司，進行客製化的履歷呈現。<br><br>
+                        </p> 
+                        <h4 class="text3">(3)英文檢定考試(準備)</h4><br>            
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由於有申請國外研究所的考量，所以目前正在準備托福考試，學期間會開始準備GRE，希望在暑假期間能完成檢定考試。
+                            <br><br>
+                        </p>   
+                        
+                    </div>
+                    <div class="col-sm-1 col-md-2 col-xs-12">
+                        <div class="circle">
+                            <h4>中程<br>(暑假~大四上)</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-11 col-md-10 col-xs-12">
+                        <h4 class="text3">(1)實習方面</h4><br>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;目前已面試完的職位為「前端工程師」實習，預計同時再申請UX相關實習工作，並在暑假期間參與兩項實習工作，由於前者的實習主要以遠端為主，所以兩項實習工作是實際可行的。<br><br>
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;希望能透過公司實習機會，讓我對產業間生態有更深地認識，例如在<b class="t-bold"產品市場分析></b>方面，便可以透過<b class="t-bold">Google Analytics</b>工具，觀看公司大數據量表結果，進而學習分析與調整產品策略，這是個人自學所受限的領域；或是經由負責網頁特定功能的程式撰寫過程，加強自己寫程式與debug能力，也可以更確立自己在團隊中的角色定位。<br><br>
+                            </p>
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;實習工作是挑戰也是學習，是步入產業鏈的過程，縱使可能因經驗不足而挫敗或衝擊，但就因為是實習生，學習的階段，更應該把握機會逼迫自己嘗試新事物，也勇於面對失敗，這是我對實習階段的期許與自我鼓勵。<br>
+                            </p>
+                        </p>
+                        <h4 class="text3">(2)學業方面</h4><br>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大四上課程安排著重於產業界學習規劃，打算修習<b class="t-bold">蔡仁松教授</b>的<b class="t-bold">「高科技產業創新與營運」</b>，透過小組設計生產產品過程，每週與教授的會談討論，學會建立產品規劃流程、自主尋找廠商資源，而我相信在前半年的修課、實習訓練下，我都將有足夠的能力完成修課目標，並有更深的理解。<br><br>
+                        </p>
+                        <h4 class="text3">(3)研究所(準備)</h4>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由於UX相關研究科系在中國、美國等高使用者國家都較完備，所以預計申請美國相關碩士學位，目前根據「TOP UX School」網站獲取相關大學碩士資源，之後也會進一步將這一整年來的作品專案、實習經驗、修課所學，彙整於申請文件中，並努力撰寫PS(personal statement)以及SOP(Statement of purpose)等，讓欲申請校感受出本人強烈的學習動機以及規劃方向。<br>
+                        </p>
+                    </div>
+                    <div class="col-sm-1 col-md-2 col-xs-12">
+                        <div class="circle">
+                            <h4>遠程<br>(大四下~畢業)</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-11 col-md-10 col-xs-12">
+                        <h4 class="text3">(1)校外資源方面</h4><br>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;因為參與NCTU+團隊，因而透過交大朋友得知UX相關課程，所以預計在大四下學期，前往<b class="t-bold"></b>交大點選<b class="t-bold">資工系張永儒教授</b>的<b class="t-bold">「使用者經驗與易用姓評估」</b>課程，把握大四最後一個學期能修課的機會，因為我認為清大真的提供學生很自由多元的修課選擇，所以當然不要放棄最後一個學期，盡可能地去學更多課程!<br><br>
+                        </p>
+                        <h4 class="text3">(2)研究計畫</h4>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;記得在<b class="t-bold">張孟凡教授</b>的<b class="t-bold"></b>「電子電路實驗」課程中，在一次的課堂上，教授提及公司設計晶片時的考量—「要怎麼確保<b class="t-bold">晶片適用於全世界國家?</b>」。在<b class="t-bold">低溫</b>的高緯度國家亦或<b class="t-bold">高溫</b>的熱帶國家，要怎麼樣設計晶片讓<b class="t-bold"></b>電子元件依舊能正常運作?」。進而讓我想到了產品設計中的普遍性、全球性，甚是在不同國家、不同文化風俗下，看待產品的方式也會不同，要怎麼設計才能讓產品流通於各國?是以客製化的方式、還是改變產品設計方針?<br><br>
+                        </p>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;所以我想要做的研究方向，將以<b class="t-bold">大客群</b>為主，也是因為想要了解不同族群背景去設定適合的產品設計，像是：針對盲人客戶設計易用性功能他們也能盡可能無障礙的使用、針對色盲使用者在顏色設計上多作著墨、或是針對東西方國家去作相對應的產品設計……等等，盡可能讓研究完備讓使用族群不受限，也因為我也很喜歡跟各國人互動交流，所以想以此面向進行設計開發，滿足產品的使用者們。
+                            <br>
+                        </p>                        
+                    </div>
                 </div>
                 <div class="col-sm-1"></div>
             </div>
-                
+            
         </div>
     </div>
+    <div id="photo">
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="col-xs-3 col-sm-4"></h1>
+                <h1 class="col-xs-6 text col-sm-4">相片集</h1>
+                <h1 class="col-xs-3 col-sm-4"></h1>
+                    <!-- <div class="container"> -->
+                        <!-- <div class="row"> -->
+                            <!-- <div class="col-sm-2"></div>
+                            <div class="col-sm-2 col-xs-12">
+                                <h1 class="album">ALBUM</h1>
+                                <h2 class="name">Wei Ko Li</h2>
+                            </div>
+                            <div class="col-sm-2"></div> -->
+                <div class="space">
+                    <div class="carousel">
+                        <div class="plane"></div>
+                        <div class="plane"></div>
+                        <div class="plane"></div>
+                        <div class="plane"></div>
+                        <div class="plane"></div>
+                        <div class="plane"></div>
+                    </div>
+                </div>
+                        <!-- </div> -->
+                    <!-- </div> -->
+            </div>
+        </div>
     </div>
 </body>
 </html>
 
+        
+     <!-- <div class="container-fluid" style="font-size:36px">
+        <div class="row">
+            <div class="col-12">
+                <div class="col-md-6 col-12 row">
+                    <img src="left.JPG" alt="MY PHOTO" class="avatar">
+                </div>
+                <div class="col-md-4 col-12 row">
+                    <img src="middle.JPG" alt="MY PHOTO">
+                </div>
+                <div class="col-md-4 col-12 row">
+                    <img src="right.JPG" alt="MY PHOTO">
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="col-md-6 col-12">
+                   
+                    <img src="HOME.JPG" alt="MY PHOTO" width="400px">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, unde? Incidunt eveniet voluptatum neque rerum, eos quae, praesentium ut amet nihil perferendis aut ipsam laudantium temporibus et deserunt ea voluptatibus repudiandae fugiat ratione iusto numquam autem repellendus. Impedit, cumque facilis?</p>
+                    </div>
+                </div>
+            <div class="col-md-6 col-12">
+                <h1>COOL</h1>
+            </div>
+        </div>
+
+        <div id="home">
+             <h1>關於我</h1>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde obcaecati at rerum provident voluptas explicabo iste odit aperiam eligendi excepturi, fugit ad, ea voluptatibus. Rerum molestiae ut porro in iste placeat harum odit laborum a sed soluta veniam consequuntur nulla id, repudiandae incidunt. Quia quo voluptatum vitae totam porro, est nobis mollitia dolores unde minus? Sequi accusamus quidem praesentium quod nobis mollitia doloribus sit fugit! Magnam facere, laborum rem fugit dignissimos maxime ea laboriosam, consequuntur dolores ullam saepe ut incidunt adipisci ad soluta hic distinctio officia provident nam eius. Repellat alias ex cupiditate tempore? Vitae nulla eaque obcaecati adipisci excepturi?</p>
+         </div>
+         <div id="menu1">
+             <h1>自傳</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque odit nam? Quod corporis consequatur sequi id, iusto, saepe iure natus possimus dolorum eum ex, modi corrupti architecto fuga excepturi necessitatibus assumenda? Omnis even</p>
+         </div>
+         <div id="menu2">
+             <h1>生涯規劃</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum mollitia nostrum sit earum, fugit eligendi, cupiditate autem facere, error ducimus odio enim pariatur nesciunt rerum iusto? Recusandae dolores fugit cumque quia animi delectus laudantium fugiat sunt cum consequatur! Adipisci nobis sint impedit aperiam eos doloremque nihil maiores perferendis possimus repellendus temporibus laborum, vel voluptas ipsam neque modi, veniam cumque commodi quo necessitatibus dolorem. Atque, quidem. Odit minima quae porro architecto natus voluptates eius, velit perspiciatis! Nobis voluptate obcaecati non consequuntur pariatur culpa aliquam rerum optio laborum eum labore quis repudiandae quos accusamus odit, molestias sit cum, veritatis voluptatum totam asperiores consequatur nesciunt fugiat. Est, ea sint! Quasi architecto delectus exercitationem in dolorem fugiat a accusamus ullam esse nam quis impedit recusandae, reiciendis quibusdam sint officiis ipsa incidunt molestias provident similique unde ducimus laborum pariatur quidem. Quasi, saepe omnis assumenda repellendus, temporibus laudantium expedita quos unde, tempore explicabo voluptate culpa animi?</p>
+         </div>
+     </div> -->
+ <!-- </div> -->
+    
 
 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="full-width">
+        <div class="fixed-width clearfix">
+            <div class="logo">
+                <a href="#">Vivian LEE</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">自傳</a></li>
+                    <li><a href="#">生涯規劃</a></li>
+                    <li><a href="#">照片集</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="full-width">
+        <div class="fixed-width">
+            <div class="row">
+                <div class="container col-12 col-md-6">
+                    <div class="pic">
+                        <img src="ME.png" alt="個人照">
+                    </div>
+                </div>
+                <div class="introduce col-12 col-md-6">
+                    <h2 class="title">申請人:李唯閣</h2>
+                    <div class="PS row">
+                        <a href="#" class="btn col-6">自傳</a>
+                        <a href="#" class="btn col-6">生涯規劃</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
