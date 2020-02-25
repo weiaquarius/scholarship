@@ -121,7 +121,7 @@ img{
     background-size: cover;
 }
 .bg-image{
-    background-image: url(HOME.JPG);
+    background-image: url(img/HOME.JPG);
     /* filter:blur(1px); */
 }
 @media (min-width: 767px){
