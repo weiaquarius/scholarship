@@ -146,11 +146,14 @@ img{
     text-align: center;
 }
 .bg-text h1{
-    font-size:30px;
+    font-size:26px;
 }
 @media (min-width:767px){
     .bg-text{
         padding:30px;
+    }
+    .bg-text h1{
+        font-size:36px;
     }
 }
 .bg-head{
