@@ -378,9 +378,7 @@ img{
     letter-spacing:3px;
     margin-bottom:25px;
 }
-.updown{
-    transform:scaleY(-1)scaleX(-1);
-}
+
 @media (min-width:767px){
     .pic{
         padding:0;
