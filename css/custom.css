@@ -145,15 +145,9 @@ img{
     z-index: 2;
     text-align: center;
 }
-.bg-text h1{
-    font-size:26px;
-}
 @media (min-width:767px){
     .bg-text{
         padding:30px;
-    }
-    .bg-text h1{
-        font-size:36px;
     }
 }
 .bg-head{
@@ -227,11 +221,13 @@ img{
     /* text-align: left; */
 }
 
+/* 自傳 */
 #menu1{
     padding:80px 0;
-    font-size:17px;
+    font-size:18px;
     line-height: 40px;
     background:linear-gradient(rgb(223, 222, 222),rgb(170, 170, 170));
+    letter-spacing: 3.5px;
 }
 @media (min-width:767px){
     #menu1{
@@ -251,6 +247,7 @@ img{
     padding-top:15px;
     margin-top:40px;
     margin-bottom: 0px;
+    
     font-weight: bold;
     text-align: center;
 }
@@ -258,100 +255,13 @@ img{
     text-align: center;
 }
 
-
-/* photo */
-#photo{
-    position:relative;
-    width: 100%;
-    height: 100%;
-    background-image:url('https://images.unsplash.com/photo-1560780552-ba54683cb263?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding:80px 0 0px 0;
-    /* height:1200px; */
-}
-
-.space{
-    display:none;
-}
-@media (min-width:992px){
-    .space{
-        display:block;
-        position: absolute;
-        margin:20% 0 0 0;
-        left:38%;
-        right:62%;
-        padding:0;
-        width: 250px;
-        height: 250px;
-        perspective: 1000px;
-    }
-    .carousel{
-        transform-style: preserve-3d;
-        /* transition:6s; */
-        animation:animate 8s infinite alternate;
-        animation-timing-function: linear;
-    }
-    /* .space:hover .carousel{
-        transform:rotateY(360deg);
-    } */
-    .carousel, .plane{
-        position: absolute;
-        width:100%;
-        height: 100%;
-        
-    }
-    .plane{
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    .plane:nth-last-of-type(1){
-        background-image: url(../img/xmas.JPG);
-        transform:translateZ(250px);
-        /* 也就是寬度一半250，再乘以根號3:1.732=>150*1.732=259.8px */
-    }
-    .plane:nth-last-of-type(2){
-        background-image: url(../img/deepcove.JPG);
-        transform:rotateY(60deg)translateZ(250px);
-    }
-    .plane:nth-last-of-type(3){
-        background-image: url(../img/photograph.JPG);
-        transform:rotateY(120deg)translateZ(250px);
-    }
-    .plane:nth-last-of-type(4){
-        background-image: url(../img/mountain.JPG);
-        transform:rotateY(180deg)scaleY(-1)scalex(-1)translateZ(250px);
-    }
-    .plane:nth-last-of-type(5){
-        background-image: url(../img/shore.JPG);
-        transform:rotateY(240deg)translateZ(250px);
-    }
-    .plane:nth-last-of-type(6){
-        background-image: url(../img/ME.png);
-        transform:rotateY(300deg)translateZ(250px);
-    }
-}
-@media (min-width:1200px){
-
-    .space{
-        margin:15% 0 0 0;
-        left:42%;
-        right: 58%;
-    }
-    
-}
+/* 生涯規劃 */
 #menu2{
-    /* background-image: url('https://images.unsplash.com/photo-1550053808-52a75a05955d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
     background:linear-gradient(rgb(73, 68, 68),rgb(77, 75, 75));
     color:white;
     padding:80px 0;
-    font-size:20px;
-    letter-spacing: 3px;
+    font-size:18px;
+    letter-spacing: 3.5px;
 }
 
 .circle{
@@ -413,22 +323,185 @@ img{
     }
     #menu2 .layout .col-sm-11{
         padding:25px;
-    }
-    
-    
+    }    
 }
-
-
 .t-bold{
     background-color: #dfd4aa;
     color:black;
 }
 .text3{
-    font-size:24px;
-    letter-spacing: 3px;
+    font-size:2px;
+    letter-spacing:3px;
     padding-top:15px;
     font-weight: 700;
     text-align: left;
+    font-size:20px;
+}
+
+/* photo */
+#photo{
+    padding:80px 0;
+    font-size:20px;
+    background: linear-gradient(rgb(236, 235, 235),rgb(192, 192, 192));
+}
+
+.title{
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top:80px;
+    padding:5px 0;
+    
+    
+}
+
+.pic{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top:35px;
+    /* padding:0 1%; */
+}
+.pic img{
+    width:100%;
+    height: 100%;
+    
+}
+
+.text4{
+    margin:0;
+    padding:20px 0 15px 0;
+    text-align: center;
+    font-size:20px;
+    font-weight: bold;
+    letter-spacing:3px;
+    margin-bottom:25px;
+}
+@media (min-width:767px){
+    .pic{
+        padding:0;
+    }
+    .pic img{
+        width: 90%;
+        height: 300px;
+        margin:5%;
+    }
+    #photo .col-sm-6{
+        padding:0;
+    }
+    .text4{
+        font-size:19px;
+    }
+}
+@media (min-width:992px){
+    .pic img{
+        width: 92%;
+        height: 380px;
+    }
+    .text4{
+        font-size:23px;
+    }
+}
+@media (min-width:1200px){
+    .pic img{
+        width: 90%;
+        height: 530px;
+    }
+    .text4{
+        font-size:25px;
+    }
+}
+
+/* last */
+#last{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background-image:url('https://images.unsplash.com/photo-1560780552-ba54683cb263?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:80px 0 0px 0;
+    display:none;
+    /* height:1200px; */
+}
+
+@media (min-width:767px){
+    #last{
+        display:block;
+    }
+    .space{
+        display:block;
+        position: absolute;
+        margin:28% 0 0 0;
+        left:35%;
+        right:65%;
+        padding:0;
+        width: 250px;
+        height: 250px;
+        perspective: 1000px;
+    }
+    .carousel{
+        transform-style: preserve-3d;
+        /* transition:6s; */
+        animation:animate 8s infinite alternate;
+        animation-timing-function: linear;
+    }
+    /* .space:hover .carousel{
+        transform:rotateY(360deg);
+    } */
+    .carousel, .plane{
+        position: absolute;
+        width:100%;
+        height: 100%;
+        
+    }
+    .plane{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .plane:nth-last-of-type(1){
+        background-image: url(../img/xmas.JPG);
+        transform:translateZ(250px);
+        /* 也就是寬度一半250，再乘以根號3:1.732=>150*1.732=259.8px */
+    }
+    .plane:nth-last-of-type(2){
+        background-image: url(../img/deepcove.JPG);
+        transform:rotateY(60deg)translateZ(250px);
+    }
+    .plane:nth-last-of-type(3){
+        background-image: url(../img/photograph.JPG);
+        transform:rotateY(120deg)translateZ(250px);
+    }
+    .plane:nth-last-of-type(4){
+        background-image: url(../img/mountain.JPG);
+        transform:rotateY(180deg)scaleY(-1)scalex(-1)translateZ(250px);
+    }
+    .plane:nth-last-of-type(5){
+        background-image: url(../img/shore.JPG);
+        transform:rotateY(240deg)translateZ(250px);
+    }
+    .plane:nth-last-of-type(6){
+        background-image: url(../img/AMS.JPG);
+        transform:rotateY(300deg)translateZ(250px);
+    }
+}
+@media (min-width:992px){
+    .space{
+        margin:20% 0 0 0;
+        left:38%;
+        right:62%;
+    }
+}
+@media (min-width:1200px){
+
+    .space{
+        margin:15% 0 0 0;
+        left:42%;
+        right: 58%;
+    } 
 }
 
 @keyframes animate{
