@@ -348,7 +348,7 @@ img{
 .title{
     letter-spacing: 3px;
     text-align: center;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bold;
     margin-top:80px;
     padding:5px 0;
@@ -377,6 +377,9 @@ img{
     font-weight: bold;
     letter-spacing:3px;
     margin-bottom:25px;
+}
+.updown{
+    transform:scaleY(-1)scaleX(-1);
 }
 @media (min-width:767px){
     .pic{
