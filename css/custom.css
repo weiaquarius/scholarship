@@ -147,18 +147,24 @@ img{
     font-size:28px;
 }
 @media (min-width:767px){
+    .bg{
+        /* margin-bottom:50px; */
+    }
     .bg-image{
         height:100%;
         filter:blur(2px);
     }
     .bg-head{
-        top: 80%;
-        left: 52%;
-        right:48%;
+        top: 84%;
+        left: 53%;
+        right:47%;
         width: 80%;
     }
     .bg-head h1{
         font-size:36px;
+    }
+    .bg-text{
+        padding:10px 0;
     }
 }
 @media (min-width:992px){
@@ -166,13 +172,12 @@ img{
         filter:blur(3px);
     }
     .bg-text{
-        padding:25px;
+        padding:15px 0;
     }
 }
-
 @media (min-width:1200px){
     .bg-head{
-        top:84%;
+        top:85%;
     }
 }
 
