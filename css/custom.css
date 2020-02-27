@@ -114,6 +114,8 @@ img{
 }
 
 .bg{
+    position: relative;
+    top:50px;
     height:750px;
     padding:0;
     background-position: center;
@@ -121,6 +123,7 @@ img{
     background-size: cover;
 }
 .bg-image{
+    height: 100%;
     background-image: url(../img/mee.JPG);
     /* filter:blur(1px); */
 }
@@ -147,9 +150,7 @@ img{
     font-size:28px;
 }
 @media (min-width:767px){
-    .bg{
-        /* margin-bottom:50px; */
-    }
+ 
     .bg-image{
         height:100%;
         filter:blur(2px);
@@ -190,6 +191,7 @@ img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top:50px;
     opacity:0.9;
 }
 /* #home .container-fluid{
