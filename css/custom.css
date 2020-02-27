@@ -145,11 +145,11 @@ img{
     z-index: 2;
     text-align: center;
 }
-@media (min-width:767px){
+/* @media (min-width:767px){
     .bg-text{
         padding:25px;
     }
-}
+} */
 @media (min-width:992px){
     .bg-text{
         padding:30px;
