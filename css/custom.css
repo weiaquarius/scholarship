@@ -121,7 +121,7 @@ img{
     background-size: cover;
 }
 .bg-image{
-    background-image: url(../img/HOME.JPG);
+    background-image: url(../img/mee.JPG);
     /* filter:blur(1px); */
 }
 @media (min-width: 767px){
@@ -146,6 +146,11 @@ img{
     text-align: center;
 }
 @media (min-width:767px){
+    .bg-text{
+        padding:25px;
+    }
+}
+@media (min-width:992px){
     .bg-text{
         padding:30px;
     }
