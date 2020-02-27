@@ -138,8 +138,8 @@ img{
 .bg-head{
     border: 3px solid #f1f1f1;
     top: 85%;
-    left: 53%;
-    right:47%;
+    left: 56%;
+    right:44%;
     transform: translate(-50%, -50%);
     width: 60%;
 }
@@ -153,8 +153,8 @@ img{
     }
     .bg-head{
         top: 80%;
-        left: 51%;
-        right:49%;
+        left: 52%;
+        right:48%;
         width: 80%;
     }
     .bg-head h1{
@@ -198,16 +198,7 @@ img{
     margin:100px 0;
     border: 3px solid #6d3862;
 }
-/* .scholar h2,h3{
-    
-    font-weight: bold;
-}
-.scholar h2{
-    padding: 20px 0 25px 0;
-}
-.scholar h3{
-    padding:8px 0 0 0;
-} */
+
 .scholar h2{
     padding:15px;
     font-weight: bold;
@@ -236,17 +227,12 @@ img{
 #menu1{
     padding:80px 0;
     font-size:18px;
-    line-height: 40px;
-    background:linear-gradient(rgb(223, 222, 222),rgb(170, 170, 170));
+    line-height: 37px;
+    background:linear-gradient(rgb(223, 222, 222),rgb(180, 179, 179));
     letter-spacing: 3.5px;
 }
-@media (min-width:767px){
-    #menu1{
-        font-size:20px;
-    }
-}
+
 .text{
-    /* margin-top:60px; */
     margin-bottom: 0px;
     border-bottom:2px solid rgb(153, 150, 150);
     padding-bottom: 20px;
@@ -254,15 +240,29 @@ img{
     text-align: center;
 }
 .text2{
+    line-height:28px;
     padding-top:15px;
     margin-top:40px;
     margin-bottom: 0px;
-    
     font-weight: bold;
     text-align: center;
 }
 .t-center{
     text-align: center;
+}
+
+@media (min-width:767px){
+    #menu1{
+        font-size:20px;
+    }
+    .text2{
+        font-size:20px;
+    }
+}
+@media (min-width:1200px){
+    .text2{
+        font-size:22px;
+    }
 }
 
 /* 生涯規劃 */
