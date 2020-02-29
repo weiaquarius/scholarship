@@ -209,14 +209,45 @@ img{
 }
 
 .scholar h2{
-    padding:15px;
+    font-size:24px;
+    padding:15px 0 10px 0;
     font-weight: bold;
 }
 .scholar h3{
-    padding:15px;
-    font-weight: bold;
+    font-size:18px;
+    letter-spacing: 2px;
+    padding:10px;
+    font-weight: bolder;
 }
-
+@media (min-width:767px){
+    .scholar h2{
+        font-size: 28px;
+    }
+    .scholar h3{
+        font-size:21px;
+    }
+}
+@media (min-width:992px){
+    .scholar{
+        padding-bottom:45px;
+    }
+    .scholar h2{
+        padding:25px;
+    }
+    .scholar h3{
+        font-size:22px;
+        letter-spacing: 3px;
+    }
+}
+@media (min-width:1200px){
+    .scholar h2{
+        padding-bottom:35px;
+        font-size:30px;
+    }
+    .scholar h3{
+        font-size:25px;
+    }
+}
 .intro{
     padding-top: 30px;
     /* font-size:40px; */
