@@ -155,12 +155,13 @@ img{
         /* filter:blur(1.5px); */
     }
     .bg-text{
+        top: 30%;
         width:40%;    
-        padding:15px 0;
+        padding:10px 0;
         letter-spacing: 3px;
     }
     .bg-text h1{
-        font-size:32px;
+        font-size:28px;
     }
 }
 @media (min-width:992px){
