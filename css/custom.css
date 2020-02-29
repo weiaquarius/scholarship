@@ -130,54 +130,53 @@ img{
 
 .bg-text{
     position: absolute;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    background-color: rgb(0,0,0);  /* color */
+    background-color: rgba(0,0,0, 0.4);  /*Black w/opacity/see-through */
     color: white;
     font-weight: bold;
     padding: 20px;
     z-index: 2;
     text-align: center;
-}
-.bg-head{
     border: 3px solid #f1f1f1;
-    top: 85%;
-    left: 50%;
-    right:50%;
+    top: 28%;
+    left: 51%;
+    right:49%;
     transform: translate(-50%, -50%);
-    width: 60%;
+    /* width: 60%; */
+    width: 45%;
+    letter-spacing: 2px;
 }
-.bg-head h1{
-    font-size:28px;
+.bg-text h1{
+    font-size:26px;
 }
 @media (min-width:767px){
- 
     .bg-image{
         height:100%;
         /* filter:blur(1.5px); */
     }
-    .bg-head{
-        top: 84%;
-        
-        width: 80%;
-    }
-    .bg-head h1{
-        font-size:36px;
-    }
     .bg-text{
-        padding:10px 0;
+        width:40%;    
+        padding:15px 0;
+        letter-spacing: 3px;
+    }
+    .bg-text h1{
+        font-size:32px;
     }
 }
 @media (min-width:992px){
-    .bg-image{
-        /* filter:blur(2px); */
+    .bg-text{
+        top:25%;
+        width: 35%;
+        left: 50%;
+        right:50%;
     }
     .bg-text{
-        padding:15px 0;
+        letter-spacing: 4px;
     }
 }
 @media (min-width:1200px){
-    .bg-head{
-        top:85%;
+    .bg-text{
+        padding:17px 0;
     }
 }
 
