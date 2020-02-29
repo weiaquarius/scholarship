@@ -206,6 +206,7 @@ img{
 .scholar{           
     margin:100px 0;
     border: 3px solid #6d3862;
+    padding-bottom:20px;
 }
 
 .scholar h2{
@@ -214,8 +215,8 @@ img{
     font-weight: bold;
 }
 .scholar h3{
-    font-size:18px;
-    letter-spacing: 2px;
+    font-size:20px;
+    letter-spacing: 1px;
     padding:10px;
     font-weight: bolder;
 }
