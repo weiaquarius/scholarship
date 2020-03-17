@@ -132,14 +132,20 @@ header .row {
     border-bottom: 1px dotted #3f3f3f;
     padding-bottom: 15px;
 } */
-#product {
+#activity {
     padding-top: 150px;
     padding-bottom: 150px;
     background: #f3dfe3;
 }
-#product .product-title {
+#activity .activity-title {
     display: block;
     text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+    color:#b7472a;
+}
+#activity a{
+    text-decoration: none;
 }
 /* action */
 /* #action h1 {
@@ -173,14 +179,24 @@ header .row {
 /* footer */
 footer {
     background: #cccccc;
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
-footer h3 {
-    margin-bottom: 20px;
+footer .col-2{
+    padding:15px 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+footer .col-10{
+    padding:15px 0;
+}
+
+.social{
+    padding-top:13.5px;
+
 }
 footer li {
     list-style: none;
-    line-height: 1.6em;
+
 }
 footer a {
     color: #222;
@@ -189,6 +205,9 @@ footer a {
 }
 footer a:hover {
     text-decoration: underline;
+}
+footer p{
+    font-weight: bold;
 }
 
 /*sns  */
@@ -202,7 +221,7 @@ footer a:hover {
 .sns a {
     display: inline-block;
     width: 33px;
-    height:33px;
+    height:35px;
     border: 1px solid #222222;
     text-align: center;
     line-height: 30px;
@@ -210,7 +229,6 @@ footer a:hover {
     transition: .6s
 }
 .sns a:hover {
-    border: 1px solid #222222;
     background: #222;
     color: #eee;
 }
@@ -220,8 +238,8 @@ footer a:hover {
 #gotop{
     display:block;
     position:fixed;
-    right: 15px;
-    bottom: 15px;
+    right: 25px;
+    bottom: 25px;
     width: 60px;
     height: 60px;
     line-height: 60px;
